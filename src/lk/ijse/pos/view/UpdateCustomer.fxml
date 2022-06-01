@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="updateCustomerContext" prefHeight="552.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.UpdateCustomerController">
+   <children>
+      <Label layoutX="230.0" layoutY="14.0" text="Update Customer">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="24.0" layoutY="61.0" prefHeight="1.0" prefWidth="617.0" />
+      <Label layoutX="53.0" layoutY="105.0" text="Customer ID :- ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="220.0" text="Customer Name :- ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="164.0" text="Customer Title :- ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="279.0" text="Customer Address :- ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="326.0" text="City :- ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="386.0" text="Province :- ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="437.0" text="Post Code :- ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustId" layoutX="212.0" layoutY="103.0" onAction="#customerIdOnAction" prefHeight="25.0" prefWidth="367.0" />
+      <JFXTextField fx:id="txtCustName" layoutX="221.0" layoutY="218.0" prefHeight="25.0" prefWidth="367.0" />
+      <JFXTextField fx:id="txtCustTitle" layoutX="221.0" layoutY="162.0" prefHeight="25.0" prefWidth="367.0" />
+      <JFXTextField fx:id="txtCustAddress" layoutX="221.0" layoutY="277.0" prefHeight="25.0" prefWidth="367.0" />
+      <JFXTextField fx:id="txtCity" layoutX="196.0" layoutY="324.0" prefHeight="25.0" prefWidth="147.0" />
+      <JFXTextField fx:id="txtProvince" layoutX="196.0" layoutY="384.0" prefHeight="25.0" prefWidth="147.0" />
+      <JFXTextField fx:id="txtPostCode" layoutX="196.0" layoutY="435.0" prefHeight="25.0" prefWidth="147.0" />
+      <JFXButton layoutX="434.0" layoutY="425.0" onAction="#updateOnAction" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: #2ecc71;" text="Update">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="620.0" prefWidth="893.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.AdminDashBoardFormController">
+   <children>
+      <Pane layoutX="2.0" prefHeight="40.0" prefWidth="893.0" style="-fx-background-color: #0e0a75;" AnchorPane.bottomAnchor="580.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#fff8f8" layoutX="374.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Dashboard">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <AnchorPane layoutY="40.0" prefHeight="32.0" prefWidth="893.0" AnchorPane.bottomAnchor="551.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <JFXButton layoutX="727.0" layoutY="6.0" onAction="#logOutOnAction" prefHeight="23.0" prefWidth="166.0" style="-fx-background-color: #f44949;" text="Log Out" textFill="#141313" AnchorPane.leftAnchor="727.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="6.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="75.0" prefHeight="552.0" prefWidth="230.0" style="-fx-background-color: #0e0a75;">
+         <children>
+            <VBox layoutY="115.0" prefHeight="310.0" prefWidth="230.0">
+               <children>
+                  <JFXButton onAction="#addNewMemberOnAction" prefHeight="42.0" prefWidth="232.0" text="Add New Member" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="10.0" onAction="#registerItemOnAction" prefHeight="42.0" prefWidth="241.0" text="Register New Item" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="52.0" onAction="#customerOnAction" prefHeight="42.0" prefWidth="235.0" text="Customers" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="136.0" onAction="#dashBoardOnAction" prefHeight="42.0" prefWidth="246.0" text="Dashboard" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="220.0" onAction="#itemOnAction" prefHeight="42.0" prefWidth="246.0" text="Items" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="178.0" onAction="#removeItemOnAction" prefHeight="42.0" prefWidth="246.0" text="Remove Item" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="220.0" onAction="#modifyItemOnAction" prefHeight="42.0" prefWidth="246.0" text="Modify Item" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="dashboardContext" layoutX="230.0" layoutY="75.0" prefHeight="552.0" prefWidth="664.0">
+         <children>
+            <BarChart fx:id="barChartItem" layoutX="25.0" layoutY="93.0" prefHeight="431.0" prefWidth="606.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" fx:id="x" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="y" side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="RemoveOrderContext" prefHeight="552.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.DeleteOrderFormController">
+   <children>
+      <Label layoutX="252.0" layoutY="14.0" text="Remove Order">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="16.0" layoutY="62.0" prefHeight="2.0" prefWidth="591.0" />
+      <Label layoutX="98.0" layoutY="113.0" text="Order ID :-">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOrderId" layoutX="208.0" layoutY="111.0" onAction="#searchOrderOnAction" />
+      <Label layoutX="98.0" layoutY="207.0" text="Order Date :-">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="323.0" text="Customer ID :-">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtOrdrDate" layoutX="215.0" layoutY="205.0" prefHeight="25.0" prefWidth="248.0" />
+      <JFXTextField fx:id="txtCustomerId" layoutX="233.0" layoutY="321.0" prefHeight="25.0" prefWidth="248.0" />
+      <JFXButton layoutX="424.0" layoutY="412.0" onAction="#removeOnAction" prefHeight="49.0" prefWidth="183.0" style="-fx-background-color: #a50000;" text="Remove" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="LoginContext" prefHeight="500.0" prefWidth="415.0" style="-fx-background-color: #95a5a6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.AdminLogInFormController">
+   <children>
+      <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="116.0" layoutY="238.0" prefHeight="25.0" prefWidth="183.0" promptText="User Name" />
+      <JFXPasswordField fx:id="pwdPassword" labelFloat="true" layoutX="116.0" layoutY="293.0" prefHeight="25.0" prefWidth="183.0" promptText="Password" />
+      <JFXButton layoutX="235.0" layoutY="354.0" onAction="#logInOnAction" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #27ae60;" text="Log in" />
+      <JFXButton layoutX="85.0" layoutY="354.0" onAction="#backOnAction" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #e74c3c;" text="Back" />
+      <FontAwesomeIconView fill="WHITE" glyphName="USERS" layoutX="181.0" layoutY="129.0" size="50" />
+      <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="77.0" layoutY="257.0" size="20" />
+      <FontAwesomeIconView fill="WHITE" glyphName="KEY" layoutX="75.0" layoutY="312.0" size="20" />
+      <Text layoutX="141.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Login">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

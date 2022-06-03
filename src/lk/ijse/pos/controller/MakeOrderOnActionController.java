@@ -217,6 +217,22 @@ public class MakeOrderOnActionController {
         }
         tblOrder.setItems(obList);
         calculateCost();
+        quantityChange();
+    }
+
+    private void quantityChange() {
+        int value = Integer.parseInt(txtQTYOnHand.getText());
+        if (!txtQTY.getText().equals("") & (value > 0)) {
+            int q = Integer.parseInt(txtQTY.getText());
+            int q2 = Integer.parseInt(txtQTYOnHand.getText());
+            int result = q2 - q;
+
+            if (result <= 0) {
+                new Alert(Alert.AlertType.WARNING, "Out Of Stock...!").show();
+            } else {
+                txtQTYOnHand.setText(String.valueOf(result));
+            }
+        }
     }
 
     public void ConfirmOrderOnAction(ActionEvent actionEvent) throws IOException {
@@ -249,6 +265,7 @@ public class MakeOrderOnActionController {
         }
         return -1;
     }
+    
     void calculateCost(){
         double ttl=0;
         for (CartTM tm:obList

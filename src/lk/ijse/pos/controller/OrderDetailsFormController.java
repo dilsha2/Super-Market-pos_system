@@ -8,18 +8,20 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import lk.ijse.pos.bo.BOFactory;
 import lk.ijse.pos.bo.custom.TableControllBO;
+import lk.ijse.pos.view.TM.OrderDetailsTM;
+import lk.ijse.pos.view.TM.OrderTM;
 
 import java.sql.SQLException;
 
 public class OrderDetailsFormController {
 
 
-    public TableView tblOrder;
+    public TableView <OrderTM> tblOrder;
     public TableColumn colOrderId;
     public TableColumn colOrderDate;
     public TableColumn colCustId;
     public ComboBox cmbSelectTable;
-    public TableView tblOrderDetails;
+    public TableView <OrderDetailsTM> tblOrderDetails;
     public TableColumn colTempOrderId;
     public TableColumn colItemCode;
     public TableColumn colQty;

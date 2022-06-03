@@ -265,7 +265,7 @@ public class MakeOrderOnActionController {
         }
         return -1;
     }
-    
+
     void calculateCost(){
         double ttl=0;
         for (CartTM tm:obList

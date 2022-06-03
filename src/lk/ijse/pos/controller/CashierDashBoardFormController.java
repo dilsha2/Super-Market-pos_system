@@ -171,7 +171,7 @@ public class CashierDashBoardFormController {
     public void logOutOnAction(ActionEvent actionEvent) throws IOException {
         Stage stage = (Stage) cashierDashboardContext.getScene().getWindow();
         stage.close();
-        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/CashierLoginForm.fxml"))));
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("../view/MainForm.fxml"))));
         stage.show();
     }
 }

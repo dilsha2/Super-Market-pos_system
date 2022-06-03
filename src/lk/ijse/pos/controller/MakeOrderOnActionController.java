@@ -22,6 +22,7 @@ import lk.ijse.pos.entity.Customer;
 import lk.ijse.pos.entity.Item;
 import lk.ijse.pos.view.TM.CartTM;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
@@ -218,7 +219,7 @@ public class MakeOrderOnActionController {
         calculateCost();
     }
 
-    public void ConfirmOrderOnAction(ActionEvent actionEvent) {
+    public void ConfirmOrderOnAction(ActionEvent actionEvent) throws IOException {
         ArrayList<OrderDetailsDTO> items=new ArrayList<>();
         double total=0;
         for (CartTM tempTm:obList) {
@@ -232,6 +233,11 @@ public class MakeOrderOnActionController {
         }else{
             new Alert(Alert.AlertType.WARNING, "Try Again").show();
         }
+
+        URL resource = getClass().getResource("../view/OrderCompleteForm.fxml");
+        Parent load = FXMLLoader.load(resource);
+        orderContext.getChildren().clear();
+        orderContext.getChildren().add(load);
 
     }
 

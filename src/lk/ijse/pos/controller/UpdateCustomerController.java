@@ -49,8 +49,8 @@ public class UpdateCustomerController {
 
     private void setData(Customer c) {
         txtCustId.setText(c.getCustId());
-        txtCustName.setText(c.getCustTitle());
-        txtCustTitle.setText(c.getCustName());
+        txtCustTitle.setText(c.getCustTitle());
+        txtCustName.setText(c.getCustName());
         txtCustAddress.setText(c.getCustAddress());
         txtCity.setText(c.getCity());
         txtProvince.setText(c.getProvince());
